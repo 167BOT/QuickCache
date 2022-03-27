@@ -1,0 +1,30 @@
+{
+  "name": "pluscache",
+  "version": "1.0.0",
+  "description": "A simple cache manager",
+  "main": "src/Cache.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/167BOT/PlusCache.git"
+  },
+  "keywords": [
+    "cache",
+    "map",
+    "data",
+    "quick",
+    "module",
+    "ligth"
+  ],
+  "author": "167#0353",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/167BOT/PlusCache/issues"
+  },
+  "homepage": "https://github.com/167BOT/PlusCache#readme"
+}
