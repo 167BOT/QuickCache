@@ -7,7 +7,7 @@ class Cache extends Map {
   #limit;
   #diffkeys;
 
-  constructor(opts = {limitData: false, differenceTypesKeys: true}) {
+  constructor(opts = {limitData: false, differenceTypesKeys: true, timeout: false}) {
     super()
 
     if (opts?.limitData && !parseInt(opts?.limitData)) throw new moduleErr('El limitante debe ser un número')
@@ -17,7 +17,7 @@ class Cache extends Map {
   }
 
   insert(key, value) {
-    if (this.size == this.#limit) return {sucess: false, message: `Has llegado al límite establecido`}
+    if (this.size == this.#limit && parseInt(this.#limit)) return {sucess: false, message: `Has llegado al límite establecido`}
 
     if (!key) throw new moduleErr('Añade la key')
     if (this.#diffkeys) key = `${key}`
@@ -109,6 +109,10 @@ class Cache extends Map {
     }
 
     return {sucess: true, getThis: this.getAll()}
+  }
+
+  saveJSONStream(pathway = null, opts = {timeout: false}) {
+
   }
 }
 

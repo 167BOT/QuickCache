@@ -1,10 +1,9 @@
 const Cache = require('../src/Cache.js')
 
-const cache = new Cache({differenceTypesKeys: true, limitData: 100})
+const cache = new Cache({differenceTypesKeys: true})
+//let importJSON = cache.importJSON(`./test.json`)
 
-let importJSON = cache.importJSON(`./test.json`)
-
-return console.log(importJSON)
+//return console.log(importJSON)
 let insert = cache.insert('names', [{name: 'John'}])
 let get = cache.getOne('names')
 
