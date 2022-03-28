@@ -37,7 +37,7 @@ class Cache extends Map {
 
     this.set(key, value)
 
-    return {sucess: true, getThis: this.getOne(key), length: this.size}
+    return {sucess: true, getThis: this.getOne(key)}
   }
 
   getOne(key) {
@@ -49,7 +49,7 @@ class Cache extends Map {
     let object = {}
     object[key] = value//set key:value format
 
-    return {data: object, length: this.size}
+    return object
   }
 
   getAll() {
