@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/167BOT/PlusCache/issues"
   },
-  "homepage": "https://github.com/167BOT/PlusCache#readme"
+  "homepage": "https://github.com/167BOT/PlusCache#readme",
+  "devDependencies": {
+    "@types/node": "^18.13.0"
+  }
 }
